@@ -29,12 +29,32 @@ h1{font-size:clamp(48px,7vw,82px);line-height:.96;letter-spacing:-4px;margin:24p
     justify-content: center;
 }
 
+.profile {
+  background: linear-gradient(145deg, rgba(255, 255, 255, .10), rgba(255, 255, 255, .035));
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  padding: 29px;
+  box-shadow: var(--shadow);
+}
+
+/* Avatar Box Fix */
+.avatar {
+  width: 145px;
+  height: 145px;
+  border-radius: 26px;
+  overflow: hidden; /* ခွင်အပြင်ဘက် ပိုထွက်နေသည့် အပိုင်းများကို ဖြတ်ထုတ်ရန် */
+  margin-bottom: 18px; /* စာသားများနှင့် မကပ်သွားစေရန် */
+}
+
+/* Photo Fit Fix */
 .avatar img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* ဓာတ်ပုံ မရှုံ့ဘဲ ခွင်အပြည့် ကွက်တိဝင်သွားစေရန် */
-    object-position: center top; /* မျက်နှာကို ဗဟိုပြု၍ အထက်ပိုင်း ပေါ်စေရန် */
-}.avatar img{width:100%;height:100%;object-fit:cover;border-radius:26px}.profile h3{font-size:25px}.role{color:var(--blue);font-weight:800;margin-top:3px}.meta{display:grid;gap:10px;margin-top:22px;color:var(--muted);font-size:13px}.meta b{color:#f3f7fb}
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* ဓာတ်ပုံ မရှုံ့ဘဲ ခွင်အပြည့် အံဝင်ခွင်ကျ ဖြစ်စေရန် */
+  object-position: center top; /* မျက်နှာကို ဗဟိုပြု၍ ပုံဖော်ပေးရန် */
+display: block;
+}
+.profile h3{font-size:25px}.role{color:var(--blue);font-weight:800;margin-top:3px}.meta{display:grid;gap:10px;margin-top:22px;color:var(--muted);font-size:13px}.meta b{color:#f3f7fb}
 section{padding:100px 0}.head{display:flex;justify-content:space-between;gap:35px;align-items:end;margin-bottom:36px}.kicker{font-size:11px;color:var(--cyan);font-weight:900;letter-spacing:1.7px;text-transform:uppercase}.head h2{font-size:42px;line-height:1.1;letter-spacing:-1.7px;margin-top:7px}.head p{max-width:510px;color:var(--muted)}
 .grid2{display:grid;grid-template-columns:1fr 1fr;gap:20px}.card{background:rgba(255,255,255,.055);border:1px solid var(--line);border-radius:22px;padding:29px}.card p{color:var(--muted);margin-top:11px}
 .stats{display:grid;grid-template-columns:1fr 1fr;gap:14px}.stat{padding:23px;border:1px solid var(--line);background:rgba(255,255,255,.04);border-radius:17px}.stat b{font-size:32px;display:block}.stat span{color:var(--muted);font-size:12px}
